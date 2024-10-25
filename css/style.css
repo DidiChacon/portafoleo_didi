@@ -1,0 +1,504 @@
+:root {
+    --principal: #da2d2d;
+    --blanco: rgb(255, 255, 255);
+    --azul: rgb(0, 0, 0);
+    --primario: rgb(255, 255, 255);
+    --secundario: rgb(255, 255, 255);
+
+    --fuentePrincipal: "Edu AU VIC WA NT Hand", cursive;
+}
+
+
+html {
+    font-size: 62.5%;
+    /*1rem=10px*/
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 5rem;
+    color: aliceblue;
+    margin: 0;
+}
+
+h1 span {
+    font-size: 2rem;
+    display: block;
+    
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    /*se utiliza para colocar el texto seleccionado en mayuscula*/
+
+}
+
+body {
+    font-size: 1.6rem;
+    background-image: linear-gradient(to bottom, var(--primario)0%, var(--secundario)100%);
+    min-height: 60rem;
+    margin: 0 0;
+}
+
+
+.nav {
+    background-color: var(--principal);
+    font-family: var(--fuentePrincipal);
+    padding: 10px;
+    margin: 11;
+    /*rem em % vh vw se utiliza para medir*/
+}
+
+.bg-nav {
+    background-color: var(--principal);
+}
+
+@media (min-width: 768px) {
+    .bg-nav {
+
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}
+
+
+.navredes {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navredes :hover{
+    background-color: rgb(226, 33, 19);
+    color: rgb(3, 3, 3);
+}
+
+
+@media(min-width: 768px) {
+    .navredes {
+        justify-content: center;
+
+    }
+}
+
+.navbar a {
+    font-size: 2rem;
+    color: var(--blanco);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+@media(min-width: 768px) {
+    .navbar a:hover {
+        background-color: var(--primario);
+        font-size: 2.2rem;
+        color: var(--azul);
+    }
+}
+
+
+.hero {
+    background-image: url('../img/nuevo.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 60rem;
+    background-position: center;
+}
+
+@media(min-width: 768px) {
+    .hero {
+        height: 70rem;
+    }
+
+}
+
+.contenido_hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(red, green, blue, alpha);
+
+}
+
+
+
+
+.ubicacion {
+    display: flex;
+    align-items: end;
+
+}
+
+.ubicacion p {
+    color: aliceblue;
+    font-size: 2rem;
+
+}
+
+.btnContactar {
+    background-color: var(--principal);
+    text-transform: uppercase;
+    border-radius: 1rem;
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    width: 80%;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .btnContactar {
+        width: auto;
+    }
+}
+
+@media(min-width:768px) {
+    .btnContactar:hover {
+        transform: scale(1.1);
+        background-color: rgb(233, 73, 73);
+    }
+
+}
+
+/*estilos del container*/
+
+.container {
+    background-color: aliceblue;
+    width: 90%;
+    margin: 0 auto;
+    /*que coloque margen a todos los lados que la centre*/
+    border-radius: 1rem;
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 120rem;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .habilidades {
+        display: grid;
+        /*crea una cuadricula*/
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2rem;
+        column-gap: 2rem;
+    }
+
+}
+
+.habilidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.habilidad p{
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.icono {
+    display: flex;
+    background-color: rgb(187, 182, 182);
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.habilidad h3 {
+    color: rgb(248, 35, 46);
+}
+
+.footer {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 4rem;
+}
+
+@media(min-width: 768px) {
+    .footer {
+        font-size: 2.4rem;
+    }
+
+}
+
+/*mio*/
+
+.o {
+    color: black;
+}
+
+.perfil {
+    background-color: rgb(172, 174, 176);
+    width: 100rem;
+    margin: 0 auto;
+    /*que coloque margen a todos los lados que la centre*/
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+@media(max-width: 768PX ) {
+    .perfil{
+        width: 80%;
+    }
+   
+}
+.main hr {
+    color: black;
+
+}
+
+.biografia {
+    display: flex;
+    align-items: flex-start ;
+    margin: 2rem;
+}
+
+.biografia-img {
+  width: 30%; 
+  padding-bottom: 3rem;
+    margin-right: 20px; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 2rem; 
+    object-fit: cover; 
+}
+
+.biografia p{
+   width: 70%;
+    max-width: 100%;
+    font-size: 2rem;
+}
+@media (max-width: 768px) {
+    .biografia {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .biografia-img {
+        margin: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        width: 80%; /* Ajusta el ancho de la imagen para pantallas pequeñas */
+        order: -1;
+        height: auto;
+    }
+
+    .biografia p {
+        width: 100%; /* Permite que el texto ocupe el 100% del ancho disponible */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+
+
+
+
+
+
+
+.div {
+    background-color: rgb(255, 255, 255);
+}
+
+.perfil p {
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.titulo {
+    color: black;
+}
+
+
+@media(min-width:768px) {
+    .Proyectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        background-color: darkgrey;
+    }
+
+}
+
+.proyectoA {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+
+}
+
+.proyectoimg {
+    width: 100%;
+    height: 30rem;
+}
+
+@media(max-width: 768px) {
+    .proyectoimg {
+
+        height: 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+.contacto {
+    background-color: rgb(236, 112, 112);
+    width: min(60rem,100%);
+    padding: 1rem; 
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+   
+}
+
+@media(max-width: 768px) {
+
+    .contacto {
+        width: 60%;
+
+    }
+}
+
+
+.campo{
+     margin-bottom: 3rem;
+}
+
+.formulario {
+    margin: 1rem;
+    font-size: 2.rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+
+@media(min-width: 768px) {
+    .campos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .campo {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 100%;
+        column-gap: 1rem;
+        margin-top: 1rem;
+    
+    }
+    .uno {
+        border: none;
+        text-align: end;
+        width: 90%;
+    
+    }
+    .formulario{
+        font-size: 2.4rem;
+    }
+    
+   
+    .campo input {
+      
+        border-radius: .5rem;
+        border: none;
+    }
+    
+    .campo textarea {
+        height: 20rem;
+    }
+    
+    .campo input,
+    .campo textarea {
+        border-radius: .5rem;
+        border:none
+    }
+    
+
+}
+.campo label {
+    font-size: 2rem;
+
+}
+
+.campo input , textarea {
+    width: 100%;
+    padding: 1rem;
+}
+   
+.input {
+    margin-top: 4rem;
+    background-color: #f41800;
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: end;
+}
+
+
+
+
